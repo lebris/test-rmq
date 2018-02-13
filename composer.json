@@ -1,0 +1,6 @@
+{
+    "require": {
+        "puzzle/amqp": "^4.0",
+        "puzzle/uuid": "^2.0"
+    }
+}

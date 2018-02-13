@@ -1,0 +1,34 @@
+{
+    "name": "puzzle/uuid",
+    "description": "Uuid as value object",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+            "name": "Nicolas Le Nardou",
+            "email": "nlenardou@naoned.fr"
+        },
+        {
+            "name": "Claude Le Bris",
+            "email": "clebris@naoned.fr"
+        }
+    ],
+    "keywords": [
+        "uuid",
+        "ddd",
+        "value object"
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Puzzle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "puzzle/pieces": "~2.2",
+        "ramsey/uuid": "~3.6",
+        "symfony/validator" : "~3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.3"
+    }
+}

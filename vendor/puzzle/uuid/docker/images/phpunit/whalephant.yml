@@ -1,0 +1,7 @@
+name: puzzle-uuid
+php:
+    version: 7.1
+extensions:
+    - xdebug
+ini:
+    - "error_reporting = E_ALL;"

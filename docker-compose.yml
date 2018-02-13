@@ -1,0 +1,16 @@
+version: '3'
+services:
+    script:
+        build: docker/images/script
+        image: scope-script
+        container_name: scope-script
+        volumes:
+            - ..:/var/www/app
+            
+    rabbitmq:
+        image: rabbitmq:3-management-alpine
+        container_name: scope-rabbitmq
+        hostname: scope-rabbitmq
+        ports:
+            - "15673:15672"
+            - "5673:5672"

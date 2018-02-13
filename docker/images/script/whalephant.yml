@@ -1,0 +1,8 @@
+name: rmq-scope
+php:
+    version: 7.2
+extensions:
+    - xdebug:2.6.0
+    - amqp
+ini:
+    - "error_reporting = E_ALL;"

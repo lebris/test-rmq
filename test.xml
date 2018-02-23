@@ -1,304 +1,291 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "ead.dtd">
-<ead audience = "external" >
-<eadheader findaidstatus = "unverified-partial-draft" >
-<eadid >OT_000049</eadid >
-<filedesc >
-<titlestmt >
-<titleproper >IR complet</titleproper >
-<subtitle >Sous-titre</subtitle >
-<author >Auteur</author >
-</titlestmt >
-<editionstmt >
-<p >Edition</p >
-</editionstmt >
-<publicationstmt >
-<publisher >Oriane Troubat</publisher >
-<date normal = "2017" >2017</date >
-</publicationstmt >
-<seriesstmt >
-<p >Collection</p >
-</seriesstmt >
-<notestmt >
-<note >
-<p >Notes</p >
-</note >
-</notestmt >
-</filedesc >
-<profiledesc >
-<creation >
-Instrument de recherche produit au moyen du logiciel Mnesys de la société
-Naoned le
-<date type = "creation" >19/04/2017</date >
-</creation >
-<langusage >
-Instrument de recherche rédigé en
-<language langcode = "fre" >français</language >
-</langusage >
-<descrules >Règles et normes</descrules >
-</profiledesc >
-<revisiondesc >
-<change >
-<date >avril 2017</date >
-<item >Révision</item >
-</change >
-</revisiondesc >
-</eadheader >
-<frontmatter >
-<titlepage >
-<p >Nouvel élément "Page de titre"</p >
-</titlepage >
-<div >
-<p >Nouvel élément "Notes</p >
-</div >
-</frontmatter >
-<archdesc level = "fonds" id = "a011492610747Y9Jt14" altrender = "" >
-<runner >IR complet</runner >
-<did >
-<unittitle >Intro de l'IR</unittitle >
-<repository >Oriane Troubat</repository >
-<unitid identifier = "1W/1-1W/100" >1 W 1-100</unitid >
-<unitdate normal = "2000-01-01/2000-12-31" >2000</unitdate >
-<physdesc >
-Description physique
-<extent unit = "ml" >5</extent >
-<extent type = "nbrectos" >2</extent >
-<extent type = "nbphoto" >10</extent >
-<extent type = "nb_feuille" >10</extent >
-<genreform >Carac. phys</genreform >
-<physfacet type = "Type (part. phys.)" >Particularité physique</physfacet >
-<dimensions unit = "cm" >Dimensions</dimensions >
-</physdesc >
-<physloc >Localisation physique</physloc >
-<materialspec label = "Label" type = "Type de particularité du
-document" >Particularité du document</materialspec >
-<origination >origine</origination >
-<langmaterial >Langue des unités documentaires</langmaterial >
-</did >
-<bioghist >
-<head >Titre biographie ou histoire</head >
-<p >Descriptif Biographie ou Histoire</p >
-</bioghist >
-<custodhist >
-<head >Titre histoire de la conservation</head >
-<p >Descriptif Histoire de la conservation</p >
-</custodhist >
-<acqinfo >
-<head >Titre modalités d'entrées</head >
-<p >Descriptif modalités d'entrées</p >
-</acqinfo >
-<scopecontent >
-<head >Titre présentation du contenu</head >
-<p >Descriptif présentation du contenu</p >
-</scopecontent >
-<appraisal >
-<head >Titre évaluation</head >
-<p >Descriptif évaluation</p >
-</appraisal >
-<accruals >
-<head >Titre accroissement</head >
-<p >Descriptif accroissement</p >
-</accruals >
-<arrangement >
-<head >Titre mode de classement</head >
-<p >Descriptif mode de classement</p >
-</arrangement >
-<accessrestrict >
-<head >Titre conditions d'accès</head >
-<p >Descriptif conditions d'accès</p >
-</accessrestrict >
-<accessrestrict type = "formate" >
-<p >NC Mauvais état au bout de 1 an à partir de 2000 (Commentaire
-communicabilité) [substitution:COTE/DE/SUBSTITUTION]</p >
-</accessrestrict >
-<userestrict >
-<head >Titre conditions d'utilisations</head >
-<p >Descriptif conditions d'utilisations</p >
-</userestrict >
-<phystech >
-<head >Titre caractéristiques matérielles</head >
-<p >Descriptif caractéristiques matérielles</p >
-</phystech >
-<otherfindaid >
-<head >Titre autre instrument de recherche</head >
-<p >Descriptif autre instrument de recherche</p >
-</otherfindaid >
-<originalsloc >
-<head >Titre existence originaux</head >
-<p >Descriptif existence originaux</p >
-</originalsloc >
-<altformavail >
-<head >Titre existence copies</head >
-<p >Descriptif existence copies</p >
-</altformavail >
-<relatedmaterial >
-<head >Titre documents en relation</head >
-<p >Descriptif documents en relation</p >
-</relatedmaterial >
-<separatedmaterial >
-<head >Titre documents séparés</head >
-<p >Descriptifs documents séparés</p >
-</separatedmaterial >
-<bibliography >
-<head >Titre bibliographie</head >
-<p >Descriptif bibliographie</p >
-</bibliography >
-<note >
-<p >Notes de la zone note</p >
-</note >
-<odd >
-<head >Titre autres données descriptives</head >
-<p >Descriptif autres données descriptives</p >
-</odd >
-<processinfo >
-<head >Titre informations sur le traitement</head >
-<p >Descriptif informations sur le traitement</p >
-</processinfo >
-<controlaccess >
-<geogname id = "candidat_000000008" >Clermont-Ferrand</geogname >
-<subject source = "thesaurus--SLASH--thesaurus_w.xml" >agriculture</subject >
-<persname >Descripteur personne</persname >
-<persname role = "auteur" >Descripteur personne auteur</persname >
-<persname authfilenumber = "FRGEN_EAC000003"
-role = "producteur" >Jean-Pierre Morel</persname >
-<corpname >Descripteur collectivité</corpname >
-<corpname authfilenumber = "FRGEN_EAC000021" role = "producteur" >Conseil
-d'État</corpname >
-<famname >Descripteur famille</famname >
-<famname authfilenumber = "FL_EAC000029"
-role = "producteur" >flo</famname >
-<genreform >Descripteur typologique</genreform >
-<function authfilenumber = "FRGEN_ISDF000001" >Police de l'eau</function >
-<title >Descripteur titre</title >
-</controlaccess >
-<daogrp >
-<daoloc href = "Enluminures/Expositions/Carolingiens/001_1.jpg" />
-</daogrp >
-<dsc type = "in-depth" >
-<c id = "a0114926127292woE2g" level = "subfonds" >
-<did >
-<unittitle >Niveau 1</unittitle >
-<unitid identifier = "1W/1" >1 W 1</unitid >
-<unitdate normal = "2000-01-01/2000-12-31" >2000</unitdate >
-<repository >Organisme</repository >
-<physdesc >
-<extent unit = "ml" >0,1</extent >
-<extent type = "nbrectos" >2</extent >
-<extent type = "nbphoto" >2</extent >
-<extent type = "nb_feuille" >10</extent >
-<genreform >Carac. phys.</genreform >
-<physfacet type = "Type (part. phy.)" >Particularité physique</physfacet >
-<dimensions unit = "cm" >Dimensions</dimensions >
-Description physique
-</physdesc >
-<physloc >Localisations physiques</physloc >
-<materialspec label = "Label" type = "Type particularité du
-document" >Particularité du document</materialspec >
-<origination >Origine</origination >
-<langmaterial >Langue des unités documents</langmaterial >
-</did >
-<bioghist >
-<head >Titre biographie</head >
-<p >Descriptif biographie</p >
-</bioghist >
-<custodhist >
-<head >Titre histoire de la conservation</head >
-<p >Descriptif histoire de la conservation</p >
-</custodhist >
-<acqinfo >
-<head >Titre modalités d'entrées</head >
-<p >Descriptif modalité d'entrées</p >
-</acqinfo >
-<scopecontent >
-<head >Titre présentation du contenu</head >
-<p >Descriptif présentation du contenu</p >
-</scopecontent >
-<appraisal >
-<head >Titre évaluation</head >
-<p >Descriptif évaluation</p >
-</appraisal >
-<accruals >
-<head >Titre accroissement</head >
-<p >Descriptif accroissement</p >
-</accruals >
-<arrangement >
-<head >Titre mode de classement</head >
-<p >Descriptif mode de classement</p >
-</arrangement >
-<accessrestrict >
-<head >Titre conditions d'accès</head >
-<p >Descriptif conditions d'accès</p >
-</accessrestrict >
-<accessrestrict type = "formate" >
-<p >NC Mauvais état au bout de 7 ans à partir de 2000 (Commentaires
-communicabilité) [substitution:COTE/SUBSTITUTION]</p >
-</accessrestrict >
-<userestrict >
-<head >Titre conditions d'utilisation</head >
-<p >Descriptif conditions d'utilisation</p >
-</userestrict >
-<phystech >
-<head >Titre caractéristiques matérielles</head >
-<p >Descriptif caractéristiques matérielles</p >
-</phystech >
-<otherfindaid >
-<head >Titre autre IR</head >
-<p >Descriptif Autre IR</p >
-</otherfindaid >
-<originalsloc >
-<head >Titre existence originaux</head >
-<p >Descriptif existence originaux</p >
-</originalsloc >
-<altformavail >
-<head >Titre existence copie</head >
-<p >Descriptif existence copie</p >
-</altformavail >
-<relatedmaterial >
-<head >Titre documents en relation</head >
-<p >Descriptif documents en relation</p >
-</relatedmaterial >
-<separatedmaterial >
-<head >Titre documents séparés</head >
-<p >Descriptif documents séparés</p >
-</separatedmaterial >
-<bibliography >
-<head >Titre biblio</head >
-<p >Descriptif biblio</p >
-</bibliography >
-<note >
-<p >Notes</p >
-</note >
-<odd >
-<head >Titre autres données descriptives</head >
-<p >Descriptif autres données descriptives</p >
-</odd >
-<processinfo >
-<head >Titre informations sur le traitement</head >
-<p >Descriptif informations sur le traitement</p >
-</processinfo >
-<daogrp >
-<daoloc href = "Enluminures/Expositions/Carolingiens/001_2.jpg" />
-</daogrp >
-<controlaccess >
-<subject
-source = "thesaurus--SLASH--thesaurus_w.xml" >économie</subject >
-<persname >Descripteur personne 2</persname >
-<persname role = "auteur" >Descripteur personne auteur 2</persname >
-<persname authfilenumber = "OT_EAC000037" role = "producteur" >Forme
-autorisée du nom</persname >
-<corpname >Descripteur collectivité 2</corpname >
-<corpname authfilenumber = "FRGEN_EAC000011"
-role = "producteur" >Conseil Général de la Manche</corpname >
-<famname >Descripteur famille 2</famname >
-<famname authfilenumber = "FRGEN_EAC000022" role = "producteur" >Conseil
-d'État / Tribunal administratif (chef-lieu de département)</famname >
-<genreform >Descripteur typologique 2</genreform >
-<geogname id = "candidat_000000010" >Nantes</geogname >
-<function authfilenumber = "FRGEN_ISDF000002" >Protection de
-l'environnement</function >
-<title >Descripteur titre 2</title >
-</controlaccess >
-</c >
-</dsc >
-</archdesc >
-</ead >
+<ead audience="external">
+  <eadheader findaidstatus="unverified-partial-draft">
+    <eadid>OT_000049</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>IR complet</titleproper>
+        <subtitle>Sous-titre</subtitle>
+        <author>Auteur</author>
+      </titlestmt>
+      <editionstmt>
+        <p>Edition</p>
+      </editionstmt>
+      <publicationstmt>
+        <publisher>Oriane Troubat</publisher>
+        <date normal="2017">2017</date>
+      </publicationstmt>
+      <seriesstmt>
+        <p>Collection</p>
+      </seriesstmt>
+      <notestmt>
+        <note>
+          <p>Notes</p>
+        </note>
+      </notestmt>
+    </filedesc>
+    <profiledesc>
+      <creation>
+        Instrument de recherche produit au moyen du logiciel Mnesys de la société Naoned le
+        <date type="creation">19/04/2017</date>
+      </creation>
+      <langusage>
+        Instrument de recherche rédigé en
+        <language langcode="fre">français</language>
+      </langusage>
+      <descrules>Règles et normes</descrules>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date>avril 2017</date>
+        <item>Révision</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <p>Nouvel élément "Page de titre"</p>
+    </titlepage>
+    <div>
+      <p>Nouvel élément "Notes</p>
+    </div>
+  </frontmatter>
+  <archdesc level="fonds" id="c525db7e-ceef-49b8-915d-d312e030d886" altrender="">
+    <runner>IR complet</runner>
+    <did>
+      <unittitle>Intro de l'IR</unittitle>
+      <repository>Oriane Troubat</repository>
+      <unitid identifier="1W/1-1W/100">1 W 1-100</unitid>
+      <unitdate normal="2000-01-01/2000-12-31">2000</unitdate>
+      <physdesc>
+        Description physique
+        <extent unit="ml">5</extent>
+        <extent type="nbrectos">2</extent>
+        <extent type="nbphoto">10</extent>
+        <extent type="nb_feuille">10</extent>
+        <genreform>Carac. phys</genreform>
+        <physfacet type="Type (part. phys.)">Particularité physique</physfacet>
+        <dimensions unit="cm">Dimensions</dimensions>
+      </physdesc>
+      <physloc>Localisation physique</physloc>
+      <materialspec label="Label" type="Type de particularité du document">Particularité du document</materialspec>
+      <origination>origine</origination>
+      <langmaterial>Langue des unités documentaires</langmaterial>
+    </did>
+    <bioghist>
+      <head>Titre biographie ou histoire</head>
+      <p>Descriptif Biographie ou Histoire</p>
+    </bioghist>
+    <custodhist>
+      <head>Titre histoire de la conservation</head>
+      <p>Descriptif Histoire de la conservation</p>
+    </custodhist>
+    <acqinfo>
+      <head>Titre modalités d'entrées</head>
+      <p>Descriptif modalités d'entrées</p>
+    </acqinfo>
+    <scopecontent>
+      <head>Titre présentation du contenu</head>
+      <p>Descriptif présentation du contenu</p>
+    </scopecontent>
+    <appraisal>
+      <head>Titre évaluation</head>
+      <p>Descriptif évaluation</p>
+    </appraisal>
+    <accruals>
+      <head>Titre accroissement</head>
+      <p>Descriptif accroissement</p>
+    </accruals>
+    <arrangement>
+      <head>Titre mode de classement</head>
+      <p>Descriptif mode de classement</p>
+    </arrangement>
+    <accessrestrict>
+      <head>Titre conditions d'accès</head>
+      <p>Descriptif conditions d'accès</p>
+    </accessrestrict>
+    <accessrestrict type="formate">
+      <p>NC Mauvais état au bout de 1 an à partir de 2000 (Commentaire communicabilité) [substitution:COTE/DE/SUBSTITUTION]</p>
+    </accessrestrict>
+    <userestrict>
+      <head>Titre conditions d'utilisations</head>
+      <p>Descriptif conditions d'utilisations</p>
+    </userestrict>
+    <phystech>
+      <head>Titre caractéristiques matérielles</head>
+      <p>Descriptif caractéristiques matérielles</p>
+    </phystech>
+    <otherfindaid>
+      <head>Titre autre instrument de recherche</head>
+      <p>Descriptif autre instrument de recherche</p>
+    </otherfindaid>
+    <originalsloc>
+      <head>Titre existence originaux</head>
+      <p>Descriptif existence originaux</p>
+    </originalsloc>
+    <altformavail>
+      <head>Titre existence copies</head>
+      <p>Descriptif existence copies</p>
+    </altformavail>
+    <relatedmaterial>
+      <head>Titre documents en relation</head>
+      <p>Descriptif documents en relation</p>
+    </relatedmaterial>
+    <separatedmaterial>
+      <head>Titre documents séparés</head>
+      <p>Descriptifs documents séparés</p>
+    </separatedmaterial>
+    <bibliography>
+      <head>Titre bibliographie</head>
+      <p>Descriptif bibliographie</p>
+    </bibliography>
+    <note>
+      <p>Notes de la zone note</p>
+    </note>
+    <odd>
+      <head>Titre autres données descriptives</head>
+      <p>Descriptif autres données descriptives</p>
+    </odd>
+    <processinfo>
+      <head>Titre informations sur le traitement</head>
+      <p>Descriptif informations sur le traitement</p>
+    </processinfo>
+    <controlaccess>
+      <geogname id="candidat_000000008">Clermont-Ferrand</geogname>
+      <subject source="thesaurus--SLASH--thesaurus_w.xml">agriculture</subject>
+      <persname>Descripteur personne</persname>
+      <persname role="auteur">Descripteur personne auteur</persname>
+      <persname authfilenumber="FRGEN_EAC000003" role="producteur">Jean-Pierre Morel</persname>
+      <corpname>Descripteur collectivité</corpname>
+      <corpname authfilenumber="FRGEN_EAC000021" role="producteur">Conseil d'État</corpname>
+      <famname>Descripteur famille</famname>
+      <famname authfilenumber="FL_EAC000029" role="producteur">flo</famname>
+      <genreform>Descripteur typologique</genreform>
+      <function authfilenumber="FRGEN_ISDF000001">Police de l'eau</function>
+      <title>Descripteur titre</title>
+    </controlaccess>
+    <daogrp>
+      <daoloc href="Enluminures/Expositions/Carolingiens/001_1.jpg" />
+    </daogrp>
+    <dsc type="in-depth">
+      <c id="ac1b3541-d19a-4f49-ac3d-8133e7f5a5e9" level="subfonds">
+        <did>
+          <unittitle>Niveau 1</unittitle>
+          <unitid identifier="1W/1">1 W 1</unitid>
+          <unitdate normal="2000-01-01/2000-12-31">2000</unitdate>
+          <repository>Organisme</repository>
+          <physdesc>
+            <extent unit="ml">0,1</extent>
+            <extent type="nbrectos">2</extent>
+            <extent type="nbphoto">2</extent>
+            <extent type="nb_feuille">10</extent>
+            <genreform>Carac. phys.</genreform>
+            <physfacet type="Type (part. phy.)">Particularité physique</physfacet>
+            <dimensions unit="cm">Dimensions</dimensions>
+            Description physique
+          </physdesc>
+          <physloc>Localisations physiques</physloc>
+          <materialspec label="Label" type="Type particularité du document">Particularité du document</materialspec>
+          <origination>Origine</origination>
+          <langmaterial>Langue des unités documents</langmaterial>
+        </did>
+        <bioghist>
+          <head>Titre biographie</head>
+          <p>Descriptif biographie</p>
+        </bioghist>
+        <custodhist>
+          <head>Titre histoire de la conservation</head>
+          <p>Descriptif histoire de la conservation</p>
+        </custodhist>
+        <acqinfo>
+          <head>Titre modalités d'entrées</head>
+          <p>Descriptif modalité d'entrées</p>
+        </acqinfo>
+        <scopecontent>
+          <head>Titre présentation du contenu</head>
+          <p>Descriptif présentation du contenu</p>
+        </scopecontent>
+        <appraisal>
+          <head>Titre évaluation</head>
+          <p>Descriptif évaluation</p>
+        </appraisal>
+        <accruals>
+          <head>Titre accroissement</head>
+          <p>Descriptif accroissement</p>
+        </accruals>
+        <arrangement>
+          <head>Titre mode de classement</head>
+          <p>Descriptif mode de classement</p>
+        </arrangement>
+        <accessrestrict>
+          <head>Titre conditions d'accès</head>
+          <p>Descriptif conditions d'accès</p>
+        </accessrestrict>
+        <accessrestrict type="formate">
+          <p>NC Mauvais état au bout de 7 ans à partir de 2000 (Commentaires communicabilité) [substitution:COTE/SUBSTITUTION]</p>
+        </accessrestrict>
+        <userestrict>
+          <head>Titre conditions d'utilisation</head>
+          <p>Descriptif conditions d'utilisation</p>
+        </userestrict>
+        <phystech>
+          <head>Titre caractéristiques matérielles</head>
+          <p>Descriptif caractéristiques matérielles</p>
+        </phystech>
+        <otherfindaid>
+          <head>Titre autre IR</head>
+          <p>Descriptif Autre IR</p>
+        </otherfindaid>
+        <originalsloc>
+          <head>Titre existence originaux</head>
+          <p>Descriptif existence originaux</p>
+        </originalsloc>
+        <altformavail>
+          <head>Titre existence copie</head>
+          <p>Descriptif existence copie</p>
+        </altformavail>
+        <relatedmaterial>
+          <head>Titre documents en relation</head>
+          <p>Descriptif documents en relation</p>
+        </relatedmaterial>
+        <separatedmaterial>
+          <head>Titre documents séparés</head>
+          <p>Descriptif documents séparés</p>
+        </separatedmaterial>
+        <bibliography>
+          <head>Titre biblio</head>
+          <p>Descriptif biblio</p>
+        </bibliography>
+        <note>
+          <p>Notes</p>
+        </note>
+        <odd>
+          <head>Titre autres données descriptives</head>
+          <p>Descriptif autres données descriptives</p>
+        </odd>
+        <processinfo>
+          <head>Titre informations sur le traitement</head>
+          <p>Descriptif informations sur le traitement</p>
+        </processinfo>
+        <daogrp>
+          <daoloc href="Enluminures/Expositions/Carolingiens/001_2.jpg" />
+        </daogrp>
+        <controlaccess>
+          <subject source="thesaurus--SLASH--thesaurus_w.xml">économie</subject>
+          <persname>Descripteur personne 2</persname>
+          <persname role="auteur">Descripteur personne auteur 2</persname>
+          <persname authfilenumber="OT_EAC000037" role="producteur">Forme autorisée du nom</persname>
+          <corpname>Descripteur collectivité 2</corpname>
+          <corpname authfilenumber="FRGEN_EAC000011" role="producteur">Conseil Général de la Manche</corpname>
+          <famname>Descripteur famille 2</famname>
+          <famname authfilenumber="FRGEN_EAC000022" role="producteur">Conseil d'État  / Tribunal administratif (chef-lieu de département)</famname>
+          <genreform>Descripteur typologique 2</genreform>
+          <geogname id="candidat_000000010">Nantes</geogname>
+          <function authfilenumber="FRGEN_ISDF000002">Protection de l'environnement</function>
+          <title>Descripteur titre 2</title>
+        </controlaccess>
+      </c>
+    </dsc>
+  </archdesc>
+</ead>

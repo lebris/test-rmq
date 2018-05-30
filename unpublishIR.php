@@ -17,26 +17,23 @@ $configuration = new Memory(array(
 
 $client = new Pecl($configuration);
 
-$message = new Message('publish');
+$message = new Message('unpublish');
 $message->addHeaders([
     // routing_key header is automatically created by library
-    'standard' => 'EAD',
-    'version' => '2002',
-    'uuid' => (string) new Uuid(),
+    'uuid' => (string) new Uuid('1e644804-5d00-4583-9e08-bb82c9a3a9b4'),
     'vendor' => 'scope',
 ]);
 $message->setAttribute('content_type', 'application/xml');
-$message->setBinary(file_get_contents("test.xml"));
 
-echo "PUBLISHING ..." . PHP_EOL;
+echo "UNPUBLISHING IR ..." . PHP_EOL;
 
 $result = $client->publish('mnesys.events.findingAid', $message);
 
 if($result !== false)
 {
-    echo "PUBLISHED !" . PHP_EOL;
+    echo "UNPUBLISHED !" . PHP_EOL;
 }
 else
 {
-    echo "PUBLISH FAILED" . PHP_EOL;
+    echo "UNPUBLISH FAILED" . PHP_EOL;
 }

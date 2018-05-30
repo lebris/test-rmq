@@ -23,8 +23,17 @@ whalephant = docker run --rm --name whalephant \
 
 #------------------------------------------------------------------------------
 
-run: create-image
-	$(call exec, test.php)
+publish-ir: create-image
+	$(call exec, publishIR.php)
+
+unpublish-ir: create-image
+	$(call exec, unpublishIR.php)
+
+publish-cdc: create-image
+	$(call exec, publishCDC.php)
+
+unpublish-cdc: create-image
+	$(call exec, unpublishCDC.php)
 
 create-image: docker/images/script/Dockerfile
 	docker build -q -t ${IMAGE_NAME} docker/images/script/

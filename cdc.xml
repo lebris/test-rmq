@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN"
+    "ead.dtd">
+<ead audience="external">
+    <eadheader>
+        <eadid>FRGEN_000001</eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Cadre de classement des archives départementales</titleproper>
+                <subtitle/>
+                <author/>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>Mnesys Archives SAP-SAE (+10 archivistes)</publisher>
+                <p>
+                    <address>
+                        <addressline>1 ter avenue de la vertonne</addressline>
+                        <addressline>44120 Vertou</addressline>
+                    </address>
+                    <date normal="2014">2014</date>
+                </p>
+            </publicationstmt>
+        </filedesc>
+        <profiledesc>
+            <creation>Instrument de recherche produit au moyen du logiciel Mnesys classement de la société Naoned Systèmes</creation>
+            <langusage>
+                Instrument de recherche rédigé en
+                <language langcode="fre">français</language>
+            </langusage>
+        </profiledesc>
+    </eadheader>
+    <archdesc level="fonds" id="a011393409965t523ur">
+        <runner>Cadre de classement des archives départementales</runner>
+        <did>
+            <unittitle>Cadre de classement des archives départementales</unittitle>
+            <repository>Mnesys Archives SAP-SAE (+10 archivistes)</repository>
+        </did>
+        <dsc type="in-depth">
+            <c id="a011393410007uEIEbq" level="subfonds">
+                <did>
+                    <unittitle>Archives antérieures à 1790</unittitle>
+                </did>
+                <c id="a011393410036gZx0Vr" level="series">
+                    <did>
+                        <unittitle>A - Actes du pouvoir souverain et Domaine public</unittitle>
+                    </did>
+                </c>
+                <c id="a01139341005453OeG5" level="series">
+                    <did>
+                        <unittitle>B - Cours et juridictions</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c id="a0113934101935jprVI" level="subfonds">
+                <did>
+                    <unittitle>Archives de la Révolution (1790-1800)</unittitle>
+                </did>
+                <c id="a011393410642prbLcY" level="series">
+                    <did>
+                        <unittitle>L - Administration et tribunaux révolutionnaires</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c id="a011393410986ioSBMI" level="subfonds">
+                <did>
+                    <unittitle>Archives contemporaines (10 juillet 1940)</unittitle>
+                </did>
+                <c id="a0113934110082ldpWB" level="series">
+                    <did>
+                        <unittitle>W - Archives administratives et judiciaires</unittitle>
+                    </did>
+                    <c level="file" id="a011433863143Yd7XH2">
+                        <did>
+                            <unittitle>Tribunal de commerce</unittitle>
+                            <unitid>147W</unitid>
+                            <unitdate normal="2001-01-01/2007-12-31" type="inclusive">2001-2007</unitdate>
+                            <origination>Tribunal de Commerce</origination>
+                            <physdesc>
+                                <extent>76 article(s)</extent>
+                            </physdesc>
+                        </did>
+                        <otherfindaid>
+                            <head>Instrument de recherche</head>
+                            <p>
+                                <archref href="2540039e-481d-4657-80e8-54f862c348a5" altrender="icon_ead">Voir l'inventaire</archref>
+                            </p>
+                        </otherfindaid>
+                        <acqinfo>
+                            <p>Type d'entrée : versement</p>
+                            <p>Date d'entrée : 26/02/2014</p>
+                        </acqinfo>
+                    </c>
+                    <c id="a011405582130grQA8S" level="file">
+                        <did>
+                            <unittitle>Service des marchés</unittitle>
+                        </did>
+                        <otherfindaid>
+                            <p>
+                                <archref href="2913853d-3302-4902-a2a3-da96fb9e9c30" altrender="icon_ead">Consultation de fournitures</archref>
+                                <archref href="0eb1260f-f5d9-4da4-8527-cdb7751c8d1c" altrender="icon_ead">Dossier de consultation et réponses</archref>
+                            </p>
+                        </otherfindaid>
+                    </c>
+                </c>
+            </c>
+        </dsc>
+        <otherfindaid>
+            <p>
+                <archref href="41886ab0-8b41-449f-9adf-835100338c8f" altrender="icon_ead">Voir l'inventaire</archref>
+            </p>
+        </otherfindaid>
+    </archdesc>
+</ead>

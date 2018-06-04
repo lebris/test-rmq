@@ -1,6 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
+require __DIR__ . '/commons/bashColors.php';
 
 use Puzzle\Configuration\Memory;
 use Puzzle\AMQP\Clients\Pecl;
@@ -34,9 +35,9 @@ $result = $client->publish('mnesys.events.classificationScheme', $message);
 
 if($result !== false)
 {
-    echo "PUBLISHED !" . PHP_EOL;
+    echo green("PUBLISHED !" . PHP_EOL);
 }
 else
 {
-    echo "PUBLISH FAILED" . PHP_EOL;
+    echo red("PUBLISH FAILED") . PHP_EOL;
 }

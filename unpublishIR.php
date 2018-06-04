@@ -1,6 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
+require __DIR__ . '/commons/bashColors.php';
 
 use Puzzle\Configuration\Memory;
 use Puzzle\AMQP\Clients\Pecl;
@@ -31,9 +32,9 @@ $result = $client->publish('mnesys.events.findingAid', $message);
 
 if($result !== false)
 {
-    echo "UNPUBLISHED !" . PHP_EOL;
+    echo green("UNPUBLISHED !") . PHP_EOL;
 }
 else
 {
-    echo "UNPUBLISH FAILED" . PHP_EOL;
+    echo red("UNPUBLISH FAILED") . PHP_EOL;
 }

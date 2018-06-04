@@ -1,6 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
+require __DIR__ . '/commons/bashColors.php';
 
 use Puzzle\Configuration\Memory;
 use Puzzle\AMQP\Clients\Pecl;
@@ -17,26 +18,41 @@ $configuration = new Memory(array(
 
 $client = new Pecl($configuration);
 
-$message = new Message('publish');
-$message->addHeaders([
-    // routing_key header is automatically created by library
-    'standard' => 'EAD',
-    'version' => '2002',
-    'uuid' => (string) new Uuid('1e644804-5d00-4583-9e08-bb82c9a3a9b4'),
-    'vendor' => 'scope',
-]);
-$message->setAttribute('content_type', 'application/xml');
-$message->setBinary(file_get_contents("ir.xml"));
-
-echo "PUBLISHING IR ..." . PHP_EOL;
-
-$result = $client->publish('mnesys.events.findingAid', $message);
-
-if($result !== false)
+$nb = 1;
+if(isset($argv[2]) && is_numeric($argv[2]))
 {
-    echo "PUBLISHED !" . PHP_EOL;
+    $nb = (int) $argv[2];
 }
-else
+
+for ($i=0; $i < $nb; $i++)
 {
-    echo "PUBLISH FAILED" . PHP_EOL;
+    $uuid = new Uuid('1e644804-5d00-4583-9e08-bb82c9a3a9b4');
+    if(isset($argv[1]) && $argv[1] === "--generate")
+    {
+        $uuid = new Uuid();
+    }
+
+    $message = new Message('publish');
+    $message->addHeaders([
+        // routing_key header is automatically created by library
+        'standard' => 'EAD',
+        'version' => '2002',
+        'uuid' => (string) $uuid,
+        'vendor' => 'scope',
+    ]);
+    $message->setAttribute('content_type', 'application/xml');
+    $message->setBinary(file_get_contents("ir.xml"));
+
+    echo "PUBLISHING IR ... ";
+
+    $result = $client->publish('mnesys.events.findingAid', $message);
+
+    if($result !== false)
+    {
+        echo green("PUBLISHED !") . PHP_EOL;
+    }
+    else
+    {
+        echo red("FAILED :(") . PHP_EOL;
+    }
 }

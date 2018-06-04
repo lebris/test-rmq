@@ -1,11 +1,13 @@
 <?php
 
 require 'vendor/autoload.php';
+require __DIR__ . '/commons/bashColors.php';
 
 use Puzzle\Configuration\Memory;
 use Puzzle\AMQP\Clients\Pecl;
 use Puzzle\AMQP\Messages\Message;
 use Puzzle\ValueObjects\Uuid;
+
 
 $uuid = new Uuid('1e644804-5d00-4583-9e08-bb82c9a3a9b4');
 if(isset($argv[1]) && $argv[1] === "--generate")
@@ -34,15 +36,15 @@ $message->addHeaders([
 $message->setAttribute('content_type', 'application/xml');
 $message->setBinary(file_get_contents("ir.xml"));
 
-echo "PUBLISHING IR ..." . PHP_EOL;
+echo "PUBLISHING IR ... ";
 
 $result = $client->publish('mnesys.events.findingAid', $message);
 
 if($result !== false)
 {
-    echo "PUBLISHED !" . PHP_EOL;
+    echo green("PUBLISHED !") . PHP_EOL;
 }
 else
 {
-    echo "PUBLISH FAILED" . PHP_EOL;
+    echo red("FAILED :(") . PHP_EOL;
 }

@@ -27,7 +27,7 @@ publish-ir: create-image
 	$(call exec, publishIR.php)
 
 generate-and-publish-ir: create-image
-	$(call exec, publishIR.php --generate)
+	@$(call exec, publishIR.php --generate)
 
 unpublish-ir: create-image
 	$(call exec, unpublishIR.php)
@@ -39,10 +39,10 @@ unpublish-cdc: create-image
 	$(call exec, unpublishCDC.php)
 
 create-image: docker/images/script/Dockerfile
-	docker build -q -t ${IMAGE_NAME} docker/images/script/
+	@docker build -q -t ${IMAGE_NAME} docker/images/script/
 
 docker/images/script/Dockerfile: whalephant
-	$(call whalephant, docker/images/script)
+	@$(call whalephant, docker/images/script)
 
 whalephant:
 	$(eval LATEST_VERSION := $(shell curl -L -s -H 'Accept: application/json' https://github.com/niktux/whalephant/releases/latest | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/'))

@@ -26,6 +26,9 @@ whalephant = docker run --rm --name whalephant \
 publish-ir: create-image
 	$(call exec, publishIR.php)
 
+generate-and-publish-ir: create-image
+	$(call exec, publishIR.php --generate)
+
 unpublish-ir: create-image
 	$(call exec, unpublishIR.php)
 

@@ -7,6 +7,12 @@ use Puzzle\AMQP\Clients\Pecl;
 use Puzzle\AMQP\Messages\Message;
 use Puzzle\ValueObjects\Uuid;
 
+$uuid = new Uuid('1e644804-5d00-4583-9e08-bb82c9a3a9b4');
+if(isset($argv[1]) && $argv[1] === "--generate")
+{
+    $uuid = new Uuid();
+}
+
 $configuration = new Memory(array(
     'amqp/broker/host' => 'rabbitmq',
     'amqp/broker/login' => 'guest',
@@ -22,7 +28,7 @@ $message->addHeaders([
     // routing_key header is automatically created by library
     'standard' => 'EAD',
     'version' => '2002',
-    'uuid' => (string) new Uuid('1e644804-5d00-4583-9e08-bb82c9a3a9b4'),
+    'uuid' => (string) $uuid,
     'vendor' => 'scope',
 ]);
 $message->setAttribute('content_type', 'application/xml');

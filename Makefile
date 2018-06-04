@@ -6,6 +6,14 @@ IMAGE_NAME=rmq-scope
 
 #------------------------------------------------------------------------------
 
+# Spread cli arguments
+ifneq (,$(filter $(firstword $(MAKECMDGOALS)),generate-and-publish-ir))
+    CLI_ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+    $(eval $(CLI_ARGS):;@:)
+endif
+
+#------------------------------------------------------------------------------
+
 exec = docker run --rm --name rmq-scope \
                      -v ${HOST_SOURCE_PATH}:${CONTAINER_SOURCE_PATH} \
                      -w ${CONTAINER_SOURCE_PATH} \
@@ -27,7 +35,7 @@ publish-ir: create-image
 	$(call exec, publishIR.php)
 
 generate-and-publish-ir: create-image
-	@$(call exec, publishIR.php --generate)
+	@$(call exec, publishIR.php --generate $(CLI_ARGS))
 
 unpublish-ir: create-image
 	$(call exec, unpublishIR.php)

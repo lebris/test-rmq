@@ -7,7 +7,7 @@ IMAGE_NAME=rmq-scope
 #------------------------------------------------------------------------------
 
 # Spread cli arguments
-ifneq (,$(filter $(firstword $(MAKECMDGOALS)),generate-and-publish-ir))
+ifneq (,$(filter $(firstword $(MAKECMDGOALS)),generate-and-publish-ir publish-media))
     CLI_ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
     $(eval $(CLI_ARGS):;@:)
 endif
@@ -51,6 +51,9 @@ create-image: docker/images/script/Dockerfile
 
 docker/images/script/Dockerfile: whalephant
 	@$(call whalephant, docker/images/script)
+
+publish-media: create-image
+	$(call exec, publishMedia.php $(CLI_ARGS))
 
 whalephant:
 	$(eval LATEST_VERSION := $(shell curl -L -s -H 'Accept: application/json' https://github.com/niktux/whalephant/releases/latest | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/'))
